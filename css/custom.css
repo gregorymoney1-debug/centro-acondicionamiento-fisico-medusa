@@ -1,4 +1,74 @@
-/* custom.css funcionando */
+/* --- Corrección general para Montserrat --- */
+
+/* Aplica tipografía de manera uniforme */
+body, button, input, select, textarea {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Ajusta altura de línea global para evitar que los textos empujen contenedores */
 body {
-    border: 5px solid red !important;
+    line-height: 1.4 !important;
+}
+
+/* --- HEADER & MENU --- */
+
+/* Menú más compacto (Montserrat es más alta) */
+.navbar-nav > li > a {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-size: 15px !important;
+}
+
+/* Ajusta altura del header fijo */
+.navbar-default {
+    padding: 5px 0 !important;
+}
+
+/* Evita que el logo empuje el menú */
+.navbar-brand img {
+    max-height: 55px !important;
+}
+
+/* --- TITULOS GENERALES --- */
+
+h1, h2, h3, h4 {
+    line-height: 1.2 !important;
+    margin-bottom: 15px !important;
+}
+
+/* --- SECCIONES QUE SE DESCUADRAN POR TEXTO MÁS GRANDE --- */
+
+.section {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+}
+
+/* --- CORRECCIÓN PARA SLIDERS --- */
+
+.owl-carousel .item h2,
+.owl-carousel .item h3,
+.owl-carousel .item p {
+    line-height: 1.2 !important;
+}
+
+/* --- BOTONES --- */
+
+.btn,
+button,
+input[type="submit"] {
+    padding: 10px 25px !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* --- TABLAS, LISTAS Y CAJAS DE PRECIO --- */
+
+.pricing-box {
+    line-height: 1.3 !important;
+    padding: 25px !important;
+}
+
+/* --- FOOTER --- */
+
+footer {
+    line-height: 1.3 !important;
 }
